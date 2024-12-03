@@ -21,8 +21,6 @@ def predicion():
 
     data_model = data_model.drop(columns=['Service1','Service2'])
 
-    print(data_model)
-
     predicion = model.predict(data_model)
 
     return jsonify({'Predicion1': predicion[0],
